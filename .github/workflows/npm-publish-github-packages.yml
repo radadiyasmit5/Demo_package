@@ -37,6 +37,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: "@radadiyasmit5"
       - run: npm ci
+      - run: |
+          echo "@username:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{secrets.NPM_GITHUB_TOKEN}}" >> .npmrc
       - run: npm publish
       - run: echo $NODE_AUTH_TOKEN
         env:
