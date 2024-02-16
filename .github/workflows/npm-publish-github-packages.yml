@@ -40,3 +40,4 @@ jobs:
       - run: echo $NODE_AUTH_TOKEN
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}
+          TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}
