@@ -15,4 +15,5 @@ add these to package.json
 "registry": "https://npm.pkg.github.com/"
 },
 
+RUN
 npm publish
